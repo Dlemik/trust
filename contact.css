@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins", sans-serif;
+    color: #fff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #243013;
+    background-image: url(https://images.pexels.com/photos/632280/pexels-photo-632280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; 
+    padding: 10px 5%;
+}
+
+
+.logo {
+    width: 65px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: -40px;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #243013;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.4s;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.oblique {
+    width: 800px;
+    padding: 20px;
+    border: 3px solid #e9ebe9;
+    box-shadow: 0 0 50px 0 #acacac;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #bdbecb;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+    color: #bdbecb;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+textarea.input {
+    resize: none;
+}
+
+.submit {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #243013, white);
+    transition: transform 0.2s;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+        nav {
+            padding: 0.5rem; 
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .logo {
+            height: 60px;
+            margin-left: 10px;
+        }
+    
+        .nav-links {
+            display: flex; 
+            align-items: center; 
+            gap: 0.5rem; 
+            text-align: center;
+            margin-top: 10px;
+        }
+    
+        .nav-links a {
+            font-size: 13px;
+            margin-right: 20px;
+        }
+    
+        .contact-section {
+            width: 100px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        .form-group {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .input {
+            font-size: 0.9rem;
+        }
+        .submit {
+            font-size: 0.9rem;
+        }
+    
+        .contact-section {
+             padding: 2rem;
+        }
+        
+    }
